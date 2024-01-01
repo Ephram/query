@@ -1,0 +1,1 @@
+Select track.name , album.title, mediatype.name , genre.name from track Inner join album on track.albumid=album.albumid Inner join Mediatype on track.mediatypeid=mediatype.mediatypeid Inner join genre on track.genreid=genre.genreid;

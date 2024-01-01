@@ -1,0 +1,1 @@
+SELECT   track.name,  COUNT(*) AS "Количество экземпляров" FROM  Track INNER JOIN  InvoiceLine ON Track.trackid = InvoiceLine.trackid INNER JOIN Invoice ON InvoiceLine.invoiceid = invoice.Invoiceid WHERE Invoice.invoicedate BETWEEN '2013-01-01' AND '2013-12-31' GROUP BY track.trackid ORDER BY COUNT(*) DESC;

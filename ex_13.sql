@@ -1,0 +1,1 @@
+Select count (*) as “количество позиций счет фактур” , invoice.billingcountry from invoiceline inner join invoice on invoiceline.invoiceid=invoice.invoiceid group by invoice.billingcountry;

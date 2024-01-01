@@ -1,0 +1,1 @@
+select invoiceline.invoiceid , track.name, artist.name from invoiceline inner join track on invoiceline.trackid = track.trackid inner join album on track.albumid=album.albumid inner join artist on album.artistid = artist.artistid;

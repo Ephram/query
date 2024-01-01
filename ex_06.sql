@@ -1,0 +1,1 @@
+Select i.invoiceid , e.firstname, e.lastname from invoice as i join employee as e where e.title like '%sales%' or '%agent%';

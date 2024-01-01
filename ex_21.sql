@@ -1,0 +1,1 @@
+Select count(distinct customer.customerid ), employee.firstname , employee.lastname from Customer inner join employee on customer.supportrepid=employee.employeeid group by employee.employeeid order by count (distinct customer.customerid) desc ;

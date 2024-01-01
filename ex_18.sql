@@ -1,0 +1,1 @@
+Select sum(total) , employee.firstname, employee.lastname  from invoice inner join customer on invoice.invoiceid=customer.customerid inner join employee on customer.supportrepid = employee.employeeid where invoice.invoicedate  between  '2009-01-01' and '2009-12-31' group by employee.employeeid order by sum (invoice.total) desc limit 1;

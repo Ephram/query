@@ -1,0 +1,1 @@
+select invoice.total, customer.firstname , customer.lastname , invoice.billingcountry, employee.firstname, employee.lastname from invoice join customer on invoice.customerid=customer.customerid join employee on customer.supportrepid=employee.employeeid;

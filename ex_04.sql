@@ -1,0 +1,1 @@
+select firstname, lastname , title from employee where title like '%sales%' or '%agent%';

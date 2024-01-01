@@ -1,0 +1,1 @@
+Select count(*), playlist.name  from playlisttrack inner join playlist on playlisttrack.playlistid = playlist.playlistid group by playlist.name;

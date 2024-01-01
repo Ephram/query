@@ -1,0 +1,1 @@
+select c.firstname, c.lastname, i.invoiceid, i.invoicedate , i.billingcountry  from customer as c join invoice as i where c.country ='Brazil';

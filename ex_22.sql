@@ -1,0 +1,1 @@
+Select billingcountry , sum(invoice.total) from invoice group by billingcountry  order  by sum(total) desc;
